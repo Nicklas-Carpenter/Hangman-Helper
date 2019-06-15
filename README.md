@@ -10,7 +10,7 @@ As long as the Python interpreter has been installed, all you need to do to run 
 ## Contributing
 Currently, the project is not in a state where there is much room for contribution. Once the base functionality has been properly implemented and tested, long term plans include creating a UI component. At this stage, contribution guidelines will be established and contributions will be greatly appreciated.
 
-__If you encounter and bugs or issues, let me know by openning an issue in the [issue tab](https://github.com/Theseus001/Hangman-Helper/issues) on the Github page.
+__If you encounter and bugs or issues, let me know by openning an issue in the [issue tab](https://github.com/Theseus001/Hangman-Helper/issues) on the Github page.__
 ## Credit
 The word list this program uses can be found at this repository. Thanks goes to dwl for compiling nearly 480 000 words into an easy-to-parse text document and for creating a second, more Hangman friendly subset of the list.
 
