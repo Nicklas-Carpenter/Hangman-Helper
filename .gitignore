@@ -1,0 +1,6 @@
+# .gitignore
+# The goal is to keep this file as small as possible, if you need to add a file to the .gitignore (for example, for 
+# files created specifically by your editor) please submit a pull request.
+
+# Editor files and folders
+.vscode
