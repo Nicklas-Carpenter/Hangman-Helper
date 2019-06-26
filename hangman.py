@@ -129,13 +129,20 @@ class NLetterWord:
 
     def filter_by_frame(self, letter, positions):
         ''''''
-        regex = list('.' * self.n_letters)
 
+        regex = list('.' * self.n_letters)
         for i in range(len(regex)):
             regex[i] = letter
-        
         regex = ''.join(regex)
+        regex = re.compile(regex)
 
+        updated_word_list = set()
+
+        for word in self.word_list:
+            if regex.fullmatch(word):
+                updated_word_list.add(word)
+        
+        self.word_list = updated_word_list
 
     def remove_words_if_contains(self, letter):
         '''Removes words from the word list if they contain the given letter.
