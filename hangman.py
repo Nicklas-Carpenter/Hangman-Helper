@@ -17,6 +17,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 '''
 
 import string
+import re
 
 class NLetterWord:
     """
@@ -119,6 +120,21 @@ class NLetterWord:
             self.remove_words_if_contains(letter)
 
         self.update_letter_stats()
+
+
+    def accept(self, letter, positions):
+        ''''''
+        pass
+
+
+    def filter_by_frame(self, letter, positions):
+        ''''''
+        regex = list('.' * self.n_letters)
+
+        for i in range(len(regex)):
+            regex[i] = letter
+        
+        regex = ''.join(regex)
 
 
     def remove_words_if_contains(self, letter):
